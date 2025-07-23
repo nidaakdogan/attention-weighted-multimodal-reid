@@ -22,7 +22,7 @@ Klasik kişi yeniden tanıma sistemleri, tek bir görüntü modalitesine bağlı
 
 ---
 
-## 🗂️ Veri Seti: PRCC (Person Re-ID under Clothing Change Challenge)
+## 🗂️ Veri Seti: PRCC (Person Re-ID under Clothing Change Challenge) 
 
 - **probe A:** RGB görüntüleriyle test yapılır.
 - **probe B:** Aynı kişi ve aynı kıyafet kombinasyonu.
@@ -70,5 +70,37 @@ RGB ve Sketch verilerinin dikkat mekanizmalarıyla ağırlıklandırılarak birl
   - `probe A/`: RGB görüntülerle test  
   - `probe B/`: Aynı kişi, aynı kıyafet kombinasyonu  
   - `probe C/`: Aynı kişi, farklı kıyafet kombinasyonu
+
+---
+
+## 📊 Değerlendirme Sonuçları
+
+Bu projede en yüksek başarı oranı, **Weighted Attention tabanlı multi-modal yapı** ile elde edilmiştir. Model RGB ve Sketch görüntüleri arasında dikkat (attention) tabanlı ağırlıklı birleştirme uygulayarak kişi yeniden tanıma (Re-ID) performansını artırmıştır.
+
+### 🎯 En Yüksek Başarı Sonuçları
+
+#### Camera B (Aynı Kıyafet):
+- Rank-1: **87.7%**
+- Rank-5: 88.7%
+- Rank-10: 93.3%
+- Rank-20: 96.0%
+- mAP: **68.6%**
+
+#### Camera C (Farklı Kıyafet):
+- Rank-1: 86.6%
+- Rank-5: 87.4%
+- Rank-10: 92.4%
+- Rank-20: 95.5%
+- mAP: **67.5%**
+
+#### Birleştirilmiş Sonuçlar (Entegre Kamera ve Modaliteler):
+- Rank-1: **87.2%**
+- Rank-5: 88.1%
+- Rank-10: 92.9%
+- Rank-20: 95.8%
+- mAP: **68.1%**
+
+> 📁 Sonuçlar `evaluation_results.csv` ve değerlendirme grafiği `evaluation_plot.png` dosyaları olarak `/resnet son result/results/` klasörüne kaydedilmiştir.
+
 
 
