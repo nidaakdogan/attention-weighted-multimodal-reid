@@ -24,9 +24,9 @@ Klasik kişi yeniden tanıma sistemleri, tek bir görüntü modalitesine bağlı
 
 ## 🗂️ Veri Seti: PRCC (Person Re-ID under Clothing Change Challenge)
 
-- **probA:** RGB görüntüleriyle test yapılır.
-- **probB:** Aynı kişi ve aynı kıyafet kombinasyonu.
-- **probC:** Aynı kişi, farklı kıyafet kombinasyonları.
+- **probe A:** RGB görüntüleriyle test yapılır.
+- **probe B:** Aynı kişi ve aynı kıyafet kombinasyonu.
+- **probe C:** Aynı kişi, farklı kıyafet kombinasyonları.
 
 Veri seti, kıyafet değişimine karşı dayanıklı yeniden tanıma sistemleri için kullanılır.
 
